@@ -1,0 +1,4 @@
+google.com: 200
+github.com: 200
+facebook.com: 200
+invalidsite.abc: FAILED
