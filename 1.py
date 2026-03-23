@@ -19,4 +19,13 @@ count = 1
 while count <= 5:
     print("counts is " , count)
     count += 1
-    
+
+def greet(name):
+    print("Hello" + name)
+greet("Praveen")
+greet("devops")
+
+def add(a,b):
+    return a + b
+result = add(5,10)
+print("The sum is ", result)
