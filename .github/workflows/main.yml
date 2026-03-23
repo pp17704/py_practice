@@ -1,5 +1,5 @@
 name: first workflow
-on : [push]
+on : [push , workflow_dispatch]
 jobs:
     build:
         runs-on: ubuntu-latest
@@ -14,4 +14,3 @@ jobs:
           run: python3 --version
         - name: Use secret
           run: echo "Token is ${{ secrets.MY_TOKEN}}"
-          
