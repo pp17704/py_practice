@@ -12,3 +12,6 @@ jobs:
           run: echo "Running Build"
         - name: Step 3 - Python Script
           run: python3 --version
+        - name: Use secret
+          run: echo "Token is ${{ secrets.MY_TOKEN}}"
+          

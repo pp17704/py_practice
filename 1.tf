@@ -15,8 +15,11 @@ variable "filename" {
   
 }
 
-resource "local_file" "example" {
+module "myfile" {
+  source = "./modules/file"
   filename = var.filename
-  content  = "Hello Praveen"
+  content = "Hello Praveen"
 }
+
+
 

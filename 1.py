@@ -29,3 +29,17 @@ def add(a,b):
     return a + b
 result = add(5,10)
 print("The sum is ", result)
+
+file = open("data.txt", "w")
+file.write("Hello Praveen Potti \n")
+file.write("Learning Devops")
+file.close()
+
+file = open("data.txt", "r")
+content = file.read()
+print(content)
+file.close()
+
+with open("data.txt", "r") as file:
+    content = file.read()
+    print(content)
