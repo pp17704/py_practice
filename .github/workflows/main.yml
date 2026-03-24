@@ -3,6 +3,8 @@ on : [push , workflow_dispatch]
 jobs:
     build:
         runs-on: ubuntu-latest
+        env:
+            NAME: Praveen Potti
         steps:
         - name: Print message
           run : echo " Hello Praveen Potti"
@@ -13,4 +15,13 @@ jobs:
         - name: Step 3 - Python Script
           run: python3 --version
         - name: Use secret
-          run: echo "Token is ${{ secrets.MY_TOKEN}}"
+          run: echo "Token is ${{ secrets.MY_TOKEN }}"
+        - name: Step 4
+          run: echo "Hello $NAME"
+    deploy:
+        runs-on: ubuntu-latest
+        steps:
+        - name: Step 1 - Checkout code
+          uses: actions/checkout@v3
+        - name: Step 2 - Run Script
+          run: echo "Running Deploy"

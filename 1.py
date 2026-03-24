@@ -1,3 +1,4 @@
+"""
 marks = 75
 
 if marks >= 90:
@@ -43,3 +44,19 @@ file.close()
 with open("data.txt", "r") as file:
     content = file.read()
     print(content)
+
+"""
+
+try:
+    a = 10
+    b = 0
+    print(a/b)
+except ZeroDivisionError:
+    print("Cannot divide by zero")
+
+try:
+    num = int("abc")
+except ValueError:
+    print("Invalid input, please enter a number")
+finally:
+    print("This block will always execute")

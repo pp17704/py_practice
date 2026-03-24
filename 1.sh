@@ -1,3 +1,4 @@
+
 echo " Enter number:"
 read num
 if [ $num -gt 10 ]
@@ -21,3 +22,8 @@ greet
 
 echo "First argument is $1"
 echo "Second argument is $2"
+
+set +e
+echo "start"
+mkdir test_dir
+echo "end"
